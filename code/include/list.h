@@ -9,10 +9,10 @@
 /*
     Linked list node
 */
-typedef struct ListNode_ {
-    void *data;
-    struct ListNode_ *next;
-} ListNode;
+typedef struct ListNode_ {  //crea un tipo de dato estructura llamado ListNode_
+    void *data; //inicializa un puntero hacia el tipo de dato del nodo
+    struct ListNode_ *next; //ListNode_ es el tipo de dato, struct son los nodos dentro de la lista, *next es el puntero hacia nodo siguiente
+} ListNode;  //notacion, cierra la struct
 
 /*
     Struct for linked list nodes
