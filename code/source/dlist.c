@@ -1,7 +1,7 @@
 /*
     dlist.c
 */
-#include <stdlib.h>
+#include <stdlib.h>    //librerias
 #include <string.h>
 
 #include "dlist.h"
@@ -9,7 +9,7 @@
 /*
     Initialize the dlist
 */
-void dlist_init (DList *list, void (*destroy)(void *data)) {
+void dlist_init (DList *list, void (*destroy)(void *data)) {       //
     list->size = 0;
     list->destroy = destroy;
     list->head = NULL;
